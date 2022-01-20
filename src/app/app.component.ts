@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import {
-  fadeInLeftOnEnterAnimation,
-  fadeInOnEnterAnimation
-} from 'angular-animations';
+import { fadeIn } from './shared';
 
 @Component({
   selector: 'lbk-root',
   templateUrl: './app.component.html',
-  animations: [fadeInLeftOnEnterAnimation(), fadeInOnEnterAnimation()],
+  animations: [fadeIn()],
 })
 export class AppComponent {}

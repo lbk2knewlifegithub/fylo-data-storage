@@ -15,10 +15,7 @@ import {
     <div>
       <div #process class="relative rounded-full bg-blue-900">
         <!-- full -->
-        <div
-          #full
-          class="relative bg-process-bar w-0 h-4  rounded-full"
-        >
+        <div #full class="relative bg-process-bar w-0 h-4 duration-700  rounded-full">
           <!-- ball -->
           <div
             class="absolute top-1/2 -translate-y-1/2 w-2 h-2 right-[3px] bg-white rounded-full "
@@ -46,9 +43,9 @@ export class ProcessBarComponent implements OnInit {
   constructor(private readonly _cd: ChangeDetectorRef) {}
 
   ngOnInit() {
-    // setTimeout(() => {
-    // }, 400);
+    setTimeout(() => {
       this.fullRef.nativeElement.style.width = `${this.percent}%`;
+    }, 400);
   }
 
   get percent() {

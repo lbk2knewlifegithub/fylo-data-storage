@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Option } from './models';
+import { Option } from '../models';
 
 @Component({
   selector: 'lbk-options',

@@ -10,7 +10,7 @@ import {
   selector: 'lbk-gigabytes-left',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <strong class="text-4xl">185</strong>
+    <strong class="text-4xl">{{ count }}</strong>
     <span class="font-medium text-sm">GB LEFT</span>
 
     <div
@@ -28,7 +28,7 @@ import {
 export class GigabytesLeftComponent implements OnInit {
   @Input() amount = 185;
   @Input() duration = 200;
-  @Input() delay = 200;
+  @Input() delay = 300;
   count = 0;
 
   constructor(private readonly _cd: ChangeDetectorRef) {}

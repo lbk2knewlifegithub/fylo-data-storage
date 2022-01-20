@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'lbk-author',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <p class="text-sm">
+    <p class="text-sm text-white text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
