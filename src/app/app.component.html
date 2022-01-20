@@ -1,17 +1,17 @@
-<!-- background -->
-<img
-  class="bg lg:hidden"
-  src="assets/images/bg-mobile.png"
-  alt="Background Mobile"
-/>
-<img
-  class="hidden bg lg:block"
-  src="assets/images/bg-desktop.png"
-  alt="Background Desktop"
-/>
-<!-- end background -->
+<main class="container relative grid h-screen gap-4 place-content-center">
+  <!-- background -->
+  <img
+    class="bg lg:hidden"
+    src="assets/images/bg-mobile.png"
+    alt="Background Mobile"
+  />
+  <img
+    class="absolute w-full h-1/2 left-0 bottom-0 hidden lg:block z-[-1]"
+    src="assets/images/bg-desktop.png"
+    alt="Background Desktop"
+  />
+  <!-- end background -->
 
-<main class="container grid h-screen gap-4 place-content-center">
   <div class="flex flex-col gap-4 lg:gap-6 lg:flex-row lg:items-end">
     <div
       class="bg-blue-800 rounded-lg rounded-tr-[100px] p-10 min-w-[320px] lg:min-w-[360px]"
@@ -23,7 +23,9 @@
       <lbk-options class="block mt-8"></lbk-options>
     </div>
 
-    <div class="relative p-10 text-white bg-blue-800 rounded-lg lg:min-w-[540px] lg:py-8" >
+    <div
+      class="relative p-10 text-white bg-blue-800 rounded-lg lg:min-w-[540px]"
+    >
       <p class="text-sm text-center lg:text-left">
         You've used <strong>815GB</strong> of your storage.
       </p>

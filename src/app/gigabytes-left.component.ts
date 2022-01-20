@@ -20,7 +20,7 @@ import {
   styles: [
     `
       :host {
-        @apply inline-flex gap-2 items-center rounded-lg bg-white py-4 px-6 text-black;
+        @apply inline-flex gap-2 items-center rounded-lg bg-white py-4 px-6 text-black lg:rounded-br-none;
       }
     `,
   ],
