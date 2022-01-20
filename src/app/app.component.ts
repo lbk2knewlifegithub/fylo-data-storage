@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import {
+  fadeInLeftOnEnterAnimation,
+  fadeInOnEnterAnimation
+} from 'angular-animations';
 
 @Component({
   selector: 'lbk-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  animations: [fadeInLeftOnEnterAnimation(), fadeInOnEnterAnimation()],
 })
-export class AppComponent {
-  title = 'fylo-data-storage';
-}
+export class AppComponent {}

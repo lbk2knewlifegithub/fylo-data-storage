@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+  }
+}
+
+@layer components {
+  .bg {
+    @apply absolute inset-0 w-full h-full object-cover z-[-1];
+  }
+
+  .bg-process-bar {
+    @apply bg-gradient-to-r from-[#ffa399] to-[#ff4d97];
+  }
+
+  .triangle{
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        /* border-right: 20px solid transparent; */
+        border-top: 20px solid #fff;
+  }
+}
